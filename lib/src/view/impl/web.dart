@@ -364,7 +364,7 @@ class _WebViewXState extends State<WebViewX> {
           jsContent: widget.jsContent,
           windowDisambiguator: iframeViewType,
           forWeb: true,
-        );
+        ) as JSAny;
         break;
       case SourceType.url:
       case SourceType.urlBypass:
@@ -374,7 +374,7 @@ class _WebViewXState extends State<WebViewX> {
             jsContent: widget.jsContent,
             windowDisambiguator: iframeViewType,
             forWeb: true,
-          );
+          ) as JSAny;
           break;
         }
 
@@ -533,7 +533,7 @@ class _WebViewXState extends State<WebViewX> {
       jsContent: widget.jsContent,
       windowDisambiguator: iframeViewType,
       forWeb: true,
-    );
+    ) as JSAny;
   }
 
   void _debugLog(String text) {
